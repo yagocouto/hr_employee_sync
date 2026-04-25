@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.log
+*.sqlite3
+node_modules/
+.odoo/
+filestore/
+.pgdata/
+*.zip
+*.tar
+*.gz

@@ -1,0 +1,22 @@
+<odoo>
+  <data>
+
+    <record id="view_employee_form_inherit_api" model="ir.ui.view">
+      <field name="name">hr.employee.form.api.button</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form" />
+      <field name="arch" type="xml">
+
+        <!-- adiciona botão no header -->
+        <xpath expr="//header" position="inside">
+          <button name="action_buscar_api"
+            type="object"
+            string="Buscar Dados API"
+            class="btn-primary" />
+        </xpath>
+
+      </field>
+    </record>
+
+  </data>
+</odoo>
